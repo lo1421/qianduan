@@ -1,0 +1,101 @@
+.box-right{
+    width: 915px;
+    margin: 0 auto;
+    .order-top{
+        height: 77px;
+        line-height: 77px;
+        color: #f99135;
+        font-size: 18px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .order-body{
+        margin-top: 30px;
+        .card{
+            width: 913px;
+            height: 190px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            border: 1px solid #e5e5e5;
+            margin-top: 10px;
+            .card-top{
+                width: 100%;
+                height: 50px;
+                background-color: #f7f7f7;
+                display: flex;
+                justify-content: space-between;
+                div{
+                    &:first-child{
+                        width: 315px;
+                        line-height: 50px;
+                        text-align: center;
+                    }
+                    &:last-child{
+                        width: 60px;
+                        img{
+                            margin: 18px;
+                        }
+                    }
+                }
+            }
+            .card-footer{
+                width: 100%;
+                height: 140px;
+                // background-color: #c2a286;
+                box-sizing: border-box;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                .one{
+                    width: 515px;
+                    display: flex;
+                    font-size: 12px;
+                   ul{
+                    width: 150px;
+                    margin-left: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    li{
+                        &:first-child{
+                            font-size: 16px;
+                            font-weight: bolder;
+                        }
+                        &:last-child{
+                            color: #f99135;
+                        }
+                    }
+                   }
+                }
+                .two{
+                    width: 105px;
+                    line-height: 105px;
+                }
+                .three{
+                    width: 145px;
+                    line-height: 105px;
+                }
+                .four{
+                    width: 95px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    font-size: 14px;
+                    button{
+                        width: 80px;
+                        height: 30px;
+                        background-color: #f99135;
+                        border: 1px solid #f99135;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        color: white;
+                    }
+                    span{
+                       margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+.box {
+  width: 1195px;
+  height: 1020px;
+  margin: 0 auto;
+}
+
+.box .box-top {
+  width: 915px;
+  margin: 0 auto;
+}
+
+.box .box-top ul {
+  width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 61px auto;
+}
+
+.box .box-top ul li {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.box .box-top ul li:first-child, .box .box-top ul li:nth-child(3), .box .box-top ul li:nth-child(5), .box .box-top ul li:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f99135;
+  margin-top: -7px;
+  text-align: center;
+}
+
+.box .box-top ul li:nth-child(2), .box .box-top ul li:nth-child(4), .box .box-top ul li:nth-child(6) {
+  width: 270px;
+  height: 5px;
+  background-color: #f99135;
+}
+
+.box .box-top ul li:last-child {
+  width: 100%;
+  display: flex;
+  margin-left: -28px;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #f99135;
+}
+
+.box .box-top ul li:last-child span:nth-child(3), .box .box-top ul li:last-child span:last-child {
+  color: #666;
+}
+
+.box .box-body {
+  width: 100%;
+  height: 795px;
+  border: 1px solid #ededed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .box-body .seat {
+  width: 735px;
+  padding: 0 25px;
+  color: #666;
+}
+
+.box .box-body .seat .seat-top {
+  width: 410px;
+  height: 90px;
+  margin: 0 auto;
+  line-height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .box-body .seat .seat-top img {
+  vertical-align: middle;
+}
+
+.box .box-body .seat .seat-center {
+  width: 545px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box .box-body .seat .seat-box {
+  height: 490px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.box .box-body .seat .seat-box table {
+  width: 335px;
+  background-color: aqua;
+}
+
+.box .box-body .seat .seat-box table td {
+  width: 30px;
+  height: 26px;
+  text-align: center;
+}
+
+.box .box-body .seat .seat-box div {
+  height: 100%;
+  border: 1px dotted #666;
+}
+
+.box .box-body .movie {
+  width: 380px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box .box-body .movie .movie-top {
+  height: 345px;
+  border-bottom: 1px dotted #999;
+}
+
+.box .box-body .movie .movie-top ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.box .box-body .movie .movie-top ul li {
+  width: 230px;
+  font-size: 14px;
+}
+
+.box .box-body .movie .movie-top ul li span {
+  color: #999;
+}
+
+.box .box-body .movie .movie-top ul li:first-child {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.box .box-body .movie .movie-top ul li:first-child .photo {
+  box-shadow: 2px 2px 10px #999;
+}
+
+.box .box-body .movie .movie-top ul li:first-child .photo img {
+  width: 120px;
+  height: 165px;
+}
+
+.box .box-body .movie .movie-top ul li:first-child h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.box .box-body .movie .movie-top ul li:first-child span {
+  color: #666;
+}
+
+.box .box-body .movie .movie-top ul li:nth-child(5) {
+  color: #f99135;
+}
+
+.box .box-body .movie .movie-footer {
+  font-size: 14px;
+}
+
+.box .box-body .movie .movie-footer .one {
+  color: #999;
+  margin: 20px 0;
+  display: flex;
+}
+
+.box .box-body .movie .movie-footer .one span {
+  display: block;
+}
+
+.box .box-body .movie .movie-footer .price {
+  margin-bottom: 40px;
+}
+
+.box .box-body .movie .movie-footer .price em {
+  color: red;
+}
+
+.box .box-body .movie .movie-footer .price span {
+  color: red;
+  font-size: 24px;
+}
+
+.box .box-body .movie .movie-footer input {
+  width: 260px;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  padding-left: 25px;
+  margin-left: 40px;
+}
+
+.box .box-body .movie .movie-footer input::placeholder {
+  color: #333;
+}
+
+.box .box-body .movie .movie-footer .num {
+  height: 42px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.box .box-body .movie .movie-footer .num input {
+  width: 165px;
+  border-radius: 20px 0 0 20px;
+  border-right: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.box .box-body .movie .movie-footer .num div {
+  width: 95px;
+  height: 100%;
+  border: 1px solid #999;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  border-left: 1px solid transparent;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #999;
+  line-height: 42px;
+}
+
+.box .box-body .movie .movie-footer button {
+  width: 260px;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #f99135;
+  margin-top: 20px;
+  color: #fff;
+  margin: 40px 0 0 45px;
+}

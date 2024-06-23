@@ -1,0 +1,497 @@
+.header {
+    .header-bottom {
+        .header-b-content {
+            .c-c {
+                >li {
+                    &:first-child {
+                        background-color: #fff;
+                        color: #000;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: #f99135;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    width: 100%;
+    // 导航
+    .nav{
+        width: 100%;
+        height: 60px;
+        background-color: #47464a;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        position: relative;
+        .nav-icon{
+            width: 18px;
+            height: 9px;
+            position: absolute;
+            top: 45px;
+            left: 800px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        ul{
+            width: 344px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: pink;
+            li{
+                font-size: 16px;
+                color: #999999;
+                &:first-child{
+                    color: #f99135;
+                }
+            }
+        }
+    }
+    .main-contain{
+        width: 1200px;
+        // height: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 97px;
+        .contain-left{
+            width: 732px;
+            height: 100%;
+            //最新资讯
+            .newest{
+                // width: 100%;
+                height: 455px;
+                margin-bottom: 73px;
+                .newest-title{
+                    width: 100%;
+                    height: 26px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    font-size: 26px;
+                    line-height: 25px;
+                    color: #f99135;
+                    a{
+                        font-size: 14px;
+                        color: #f99135;
+                        span{
+                            vertical-align: middle;
+                        }
+                        img{
+                            margin-left: 5px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .newest-card{
+                    // width: 100%;
+                    height: 411px;
+                    margin-top: 18px;
+                    // background-color: yellow;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    .card{
+                        width: 231px;
+                        height: 196px;
+                        // background-color: skyblue;
+                        img{
+                            display: block;
+                        }
+                        p{
+                            width: 224px;
+                            height: 33px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #333333;
+                            display: flex;
+                            justify-content: space-between;
+                            &:nth-child(2){
+                                margin-top: 15px;
+                            }
+                            &:last-child{
+                                width: 100%;
+                                height: 14px;
+                                margin-top: 5px;
+                            }
+                            span{
+                                color: #999999;
+                                font-size: 12px;
+                                line-height: 14px;
+                                &:last-child{
+                                    display: flex;
+                                    align-items: center;
+                                    img{
+                                        width: 18px;
+                                        height: 14px;
+                                        margin-right: 6px;
+                                    }
+                                    span{
+                                        color: #aaaaaa;
+	                                    opacity: 0.35;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            // 预告片速递
+            .advance{
+                width: 100%;
+                height: 460px;
+                .advance-title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        font-size: 26px;
+                        color: #2d98f3;
+                        line-height: 25px;
+                    }
+                    a{
+                        font-size: 14px;
+                        color: #2d98f3;
+                        span{
+                            vertical-align: middle;
+                        }
+                        img{
+                            margin-left: 5px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .advance-card{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .advance-left{
+                        width: 480px;
+                        height: 415px;
+                        // background-color: skyblue;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        .card-up{
+                            width: 100%;
+                            height: 270px;
+                            background-image: url(../images/information/advance_1.jpg);
+                            position: relative;
+                            p{
+                                color: white;
+                                font-size: 14px;
+                                position: absolute;
+                                &:first-child{
+                                    bottom: 33px;
+                                    left: 14px;
+                                }
+                                &:last-child{
+                                    width: 100%;
+                                    padding: 0 8px;
+                                    padding-left: 10px;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                    bottom: 8px;
+                                    span{
+                                        font-size: 12px;
+                                        // margin-left: 5px;
+                                        display: flex;
+                                        align-items: center;
+                                        &:last-child{
+                                            margin: 0;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        &:first-child{
+                                            span{
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .bg{
+                                width: 100%;
+                                height: 270px;
+                                // background-color: rgba(0, 0, 0, 0.3);
+                                background: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0));
+                                position: absolute;
+                                top: 0;
+                            }
+                        }
+                        .card-down{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .card-l{
+                                width: 230px;
+                                height: 125px;
+                                // background-color: wheat;
+                                background-image: url(../images/information/advance_4.jpg);
+                                position: relative;
+                                p{
+                                    color: white;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    &:first-child{
+                                        bottom: 33px;
+                                        left: 14px;
+                                    }
+                                    &:last-child{
+                                        width: 100%;
+                                        padding: 0 8px;
+                                        padding-left: 10px;
+                                        display: flex;
+                                        box-sizing: border-box;
+                                        justify-content: space-between;
+                                        align-items: flex-end;
+                                        bottom: 8px;
+                                        span{
+                                            font-size: 12px;
+                                            // margin-left: 5px;
+                                            display: flex;
+                                            align-items: center;
+                                            &:last-child{
+                                                margin: 0;
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            &:first-child{
+                                                span{
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .bg{
+                                    width: 100%;
+                                    height: 100%;
+                                    // background-color: rgba(0, 0, 0, 0.3);
+                                    background: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0));
+                                    position: absolute;
+                                    top: 0;
+                                }
+                            }
+                            .card-r{
+                                width: 230px;
+                                height: 125px;
+                                // background-color: wheat;
+                                background-image: url(../images/information/advance_5.jpg);
+                            }
+                        }
+                        
+                    }
+                    .advance-right{
+                        width: 230px;
+                        height: 415px;
+                        // background-color: olivedrab;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        .card-right{
+                            width: 230px;
+                            height: 125px;
+                            // background-color: wheat;
+                            background-image: url(../images/information/advance_2.jpg);
+                            position: relative;
+                            p{
+                                color: white;
+                                font-size: 14px;
+                                position: absolute;
+                                &:first-child{
+                                    bottom: 33px;
+                                    left: 14px;
+                                }
+                                &:last-child{
+                                    width: 100%;
+                                    padding: 0 8px;
+                                    padding-left: 10px;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                    bottom: 8px;
+                                    span{
+                                        font-size: 12px;
+                                        // margin-left: 5px;
+                                        display: flex;
+                                        align-items: center;
+                                        &:last-child{
+                                            margin: 0;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        &:first-child{
+                                            span{
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .bg{
+                                width: 100%;
+                                height: 100%;
+                                // background-color: rgba(0, 0, 0, 0.3);
+                                background: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0));
+                                position: absolute;
+                                top: 0;
+                            }
+                        }
+                        .card-center{
+                            background-image: url(../images/information/advance_3.jpg);
+                        }
+                        .card-down{
+                            background-image: url(../images/information/advance_6.jpg);
+                        }
+                    }
+                }
+
+            }
+        }
+        .contain-right{
+            width: 362px;
+            height: 100%;
+            // 热门资讯
+            .hot{
+                width: 100%;
+                height: 475px;
+                // background-color: palegoldenrod;
+                margin-bottom: 54px;
+                h3{
+                    font-size: 26px;
+                    color: #f99135;
+                    line-height: 26px;
+                    margin-bottom: 18px;
+                }
+                .hot-top{
+                    width: 358px;
+                    height: 74px;
+                    display: flex;
+                    .hot-top-pic{
+                        width: 120px;
+                        height: 68px;
+                        background-image: url(../images/information/hot.jpg);
+                        position: relative;
+                        .num-box{
+                            width: 18px;
+                            height: 18px;
+                            position: absolute;
+                            background-color: #f99135;
+                            bottom: -4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    p{
+                        width: 224px;
+                        height: 31px;
+                        font-size: 14px;
+                        color: #333333;
+                        margin-left: 14px;
+                        margin-top: 17px;
+                    }
+                }
+                .hot-text{
+                    display: flex;
+                    margin: 19px 0;
+                    padding-left: 4px;
+                    p{
+                        font-size: 14px;
+                        color: #333333;
+                        margin-left: 14px;
+                    }
+                    &:nth-child(3){
+                        margin-top: 15px;
+                        p{
+                            margin-left: 13px;
+                        }
+                    }
+                    &:nth-child(4){
+                        p{
+                            margin-left: 13px;
+                            color: #f99135;
+                        }
+                    }
+                    &:last-child{
+                        p{
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+            // 娱乐热点
+            .entertainment{
+                width: 100%;
+                height: 468px;
+                // background-color: aqua;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                h3{
+                    font-size: 26px;
+                    color: #2d98f3;
+                    margin-bottom: 18px;
+                }
+                .en-card{
+                    width: 358px;
+                    height: 72px;
+                    // background-color: wheat;
+                    display: flex;
+                    justify-content: space-between;
+                    .en-pic{
+                        width: 120px;
+                        height: 68px;
+                        background-image: url(../images/information/en_1.jpg);
+                        position: relative;
+                        .num{
+                            width: 18px;
+                            height: 18px;
+                            position: absolute;
+                            background-color: #f99135;
+                            bottom: -4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .num-gray{
+                            background-color: #aaaaaa;
+                        }
+                    }
+                    p{
+                        width: 225px;
+                        height: 31px;
+                        font-size: 14px;
+                        line-height: 15px;
+                        margin-top: 22px;
+                    }
+                    .en-snake{
+                        background-image: url(../images/information/en_2.jpg);
+                    }
+                    .en-rabbit{
+                        background-image: url(../images/information/en_3.jpg);
+                    }
+                    .en-end{
+                        background-image: url(../images/information/en_4.jpg);
+                    }
+                    .en-forest{
+                        background-image: url(../images/information/en_5.jpg);
+                    }
+                }
+            }
+        }
+    }
+}

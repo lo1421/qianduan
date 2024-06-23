@@ -1,0 +1,151 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 统一字体和背景颜色 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5;
+    color: #333;
+}
+/* 主页内容样式 */
+.hero {
+    background-image: url('images/china_main.jpg');
+    background-size: cover;
+    color: rgb(178, 127, 220);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* 导航栏样式 */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 29px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 翻转效果样式 */
+.flip-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #6a1b9a;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.flip-card-front h2 {
+    margin-top: 10px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #4a0072;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

@@ -1,0 +1,534 @@
+.header .header-bottom .header-b-content .c-c > li:first-child {
+  background-color: #fff;
+  color: #000;
+}
+
+.header .header-bottom .header-b-content .c-c > li:nth-child(4) {
+  background-color: #f99135;
+  color: #ffffff;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .nav {
+  width: 100%;
+  height: 60px;
+  background-color: #47464a;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.main .nav .nav-icon {
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  top: 45px;
+  left: 800px;
+}
+
+.main .nav .nav-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .nav ul {
+  width: 344px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .nav ul li {
+  font-size: 16px;
+  color: #999999;
+}
+
+.main .nav ul li:first-child {
+  color: #f99135;
+}
+
+.main .main-contain {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 97px;
+}
+
+.main .main-contain .contain-left {
+  width: 732px;
+  height: 100%;
+}
+
+.main .main-contain .contain-left .newest {
+  height: 455px;
+  margin-bottom: 73px;
+}
+
+.main .main-contain .contain-left .newest .newest-title {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 26px;
+  line-height: 25px;
+  color: #f99135;
+}
+
+.main .main-contain .contain-left .newest .newest-title a {
+  font-size: 14px;
+  color: #f99135;
+}
+
+.main .main-contain .contain-left .newest .newest-title a span {
+  vertical-align: middle;
+}
+
+.main .main-contain .contain-left .newest .newest-title a img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.main .main-contain .contain-left .newest .newest-card {
+  height: 411px;
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card {
+  width: 231px;
+  height: 196px;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card img {
+  display: block;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p {
+  width: 224px;
+  height: 33px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p:nth-child(2) {
+  margin-top: 15px;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p:last-child {
+  width: 100%;
+  height: 14px;
+  margin-top: 5px;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p span {
+  color: #999999;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p span:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p span:last-child img {
+  width: 18px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.main .main-contain .contain-left .newest .newest-card .card p span:last-child span {
+  color: #aaaaaa;
+  opacity: 0.35;
+}
+
+.main .main-contain .contain-left .advance {
+  width: 100%;
+  height: 460px;
+}
+
+.main .main-contain .contain-left .advance .advance-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-title span {
+  font-size: 26px;
+  color: #2d98f3;
+  line-height: 25px;
+}
+
+.main .main-contain .contain-left .advance .advance-title a {
+  font-size: 14px;
+  color: #2d98f3;
+}
+
+.main .main-contain .contain-left .advance .advance-title a span {
+  vertical-align: middle;
+}
+
+.main .main-contain .contain-left .advance .advance-title a img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.main .main-contain .contain-left .advance .advance-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left {
+  width: 480px;
+  height: 415px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up {
+  width: 100%;
+  height: 270px;
+  background-image: url(../images/information/advance_1.jpg);
+  position: relative;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p:first-child {
+  bottom: 33px;
+  left: 14px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p:last-child {
+  width: 100%;
+  padding: 0 8px;
+  padding-left: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 8px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p:last-child span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p:last-child span:last-child {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up p:last-child span:first-child span {
+  margin-left: 5px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-up .bg {
+  width: 100%;
+  height: 270px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  position: absolute;
+  top: 0;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l {
+  width: 230px;
+  height: 125px;
+  background-image: url(../images/information/advance_4.jpg);
+  position: relative;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p:first-child {
+  bottom: 33px;
+  left: 14px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p:last-child {
+  width: 100%;
+  padding: 0 8px;
+  padding-left: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 8px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p:last-child span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p:last-child span:last-child {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l p:last-child span:first-child span {
+  margin-left: 5px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-l .bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  position: absolute;
+  top: 0;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-left .card-down .card-r {
+  width: 230px;
+  height: 125px;
+  background-image: url(../images/information/advance_5.jpg);
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right {
+  width: 230px;
+  height: 415px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right {
+  width: 230px;
+  height: 125px;
+  background-image: url(../images/information/advance_2.jpg);
+  position: relative;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p:first-child {
+  bottom: 33px;
+  left: 14px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p:last-child {
+  width: 100%;
+  padding: 0 8px;
+  padding-left: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 8px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p:last-child span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p:last-child span:last-child {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right p:last-child span:first-child span {
+  margin-left: 5px;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-right .bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  position: absolute;
+  top: 0;
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-center {
+  background-image: url(../images/information/advance_3.jpg);
+}
+
+.main .main-contain .contain-left .advance .advance-card .advance-right .card-down {
+  background-image: url(../images/information/advance_6.jpg);
+}
+
+.main .main-contain .contain-right {
+  width: 362px;
+  height: 100%;
+}
+
+.main .main-contain .contain-right .hot {
+  width: 100%;
+  height: 475px;
+  margin-bottom: 54px;
+}
+
+.main .main-contain .contain-right .hot h3 {
+  font-size: 26px;
+  color: #f99135;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.main .main-contain .contain-right .hot .hot-top {
+  width: 358px;
+  height: 74px;
+  display: flex;
+}
+
+.main .main-contain .contain-right .hot .hot-top .hot-top-pic {
+  width: 120px;
+  height: 68px;
+  background-image: url(../images/information/hot.jpg);
+  position: relative;
+}
+
+.main .main-contain .contain-right .hot .hot-top .hot-top-pic .num-box {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-color: #f99135;
+  bottom: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-contain .contain-right .hot .hot-top p {
+  width: 224px;
+  height: 31px;
+  font-size: 14px;
+  color: #333333;
+  margin-left: 14px;
+  margin-top: 17px;
+}
+
+.main .main-contain .contain-right .hot .hot-text {
+  display: flex;
+  margin: 19px 0;
+  padding-left: 4px;
+}
+
+.main .main-contain .contain-right .hot .hot-text p {
+  font-size: 14px;
+  color: #333333;
+  margin-left: 14px;
+}
+
+.main .main-contain .contain-right .hot .hot-text:nth-child(3) {
+  margin-top: 15px;
+}
+
+.main .main-contain .contain-right .hot .hot-text:nth-child(3) p {
+  margin-left: 13px;
+}
+
+.main .main-contain .contain-right .hot .hot-text:nth-child(4) p {
+  margin-left: 13px;
+  color: #f99135;
+}
+
+.main .main-contain .contain-right .hot .hot-text:last-child p {
+  margin-left: 6px;
+}
+
+.main .main-contain .contain-right .entertainment {
+  width: 100%;
+  height: 468px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.main .main-contain .contain-right .entertainment h3 {
+  font-size: 26px;
+  color: #2d98f3;
+  margin-bottom: 18px;
+}
+
+.main .main-contain .contain-right .entertainment .en-card {
+  width: 358px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-pic {
+  width: 120px;
+  height: 68px;
+  background-image: url(../images/information/en_1.jpg);
+  position: relative;
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-pic .num {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-color: #f99135;
+  bottom: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-pic .num-gray {
+  background-color: #aaaaaa;
+}
+
+.main .main-contain .contain-right .entertainment .en-card p {
+  width: 225px;
+  height: 31px;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 22px;
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-snake {
+  background-image: url(../images/information/en_2.jpg);
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-rabbit {
+  background-image: url(../images/information/en_3.jpg);
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-end {
+  background-image: url(../images/information/en_4.jpg);
+}
+
+.main .main-contain .contain-right .entertainment .en-card .en-forest {
+  background-image: url(../images/information/en_5.jpg);
+}

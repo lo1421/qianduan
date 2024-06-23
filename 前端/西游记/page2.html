@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西游记 - 页面二</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .image-item {
+            position: relative;
+            margin: 0.5rem;
+        }
+        .image-item img {
+            max-width: 300px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+            display: block;
+        }
+        .image-item:hover img {
+            transform: scale(1.1);
+        }
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 0.5rem;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>西游记 - 孙悟空</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="page2.html">孙悟空</a></li>
+                <li><a href="page3.html">猪八戒</a></li>
+                <li><a href="page4.html">沙僧</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>孙悟空的力量与智慧</h2>
+        <p>孙悟空，是在小说《西游记》中登场的主要角色之一，为一只道行高深的猴子，别名孙行者、孙猴子。自封美猴王、齐天大圣。
+            他通过一系列惊险的冒险和挑战，展示了他的勇气和智慧。</p>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="images/sun-wukong-pan-tao-hui.jpg" alt="孙悟空大闹蟠桃会">
+                <div class="image-caption">孙悟空大闹蟠桃会</div>
+            </div>
+            <div class="image-item">
+                <img src="images/sun-wukong-ya-wa-wu-zhi-shan.jpg" alt="孙悟空被压五指山">
+                <div class="image-caption">孙悟空被压五指山</div>
+            </div>
+            <div class="image-item">
+                <img src="images/sun-wukong-zhen-jia-mei-hou-wang.jpg" alt="真假美猴王">
+                <div class="image-caption">真假美猴王</div>
+            </div>
+            <div class="image-item">
+                <img src="images/sun-wukong-san-jie-ba-jiao-shan.jpg" alt="孙悟空三借芭蕉扇">
+                <div class="image-caption">孙悟空三借芭蕉扇</div>
+            </div>
+        </div>
+        <p>点击下方按钮，了解更多关于《西游记》的文化影响。</p>
+        <a href="page3.html" class="btn">下一页</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 西游记</p>
+    </footer>
+</body>
+</html>

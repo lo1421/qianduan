@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技中国</title>
+    <link rel="stylesheet" href="css/tech_china.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="beautiful_china.html">美丽中国</a></li>
+                <li><a href="green_china.html">绿色中国</a></li>
+                <li><a href="harmonious_china.html">和谐中国</a></li>
+                <li><a href="tech_china.html">科技中国</a></li>
+                <li><a href="about_us.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slideshow">
+            <div class="slides">
+                <img class="slide" src="images/tech1.jpg" alt="科技1">
+                <img class="slide" src="images/tech2.jpg" alt="科技2">
+                <img class="slide" src="images/tech3.jpg" alt="科技3">
+                <img class="slide" src="images/tech4.jpg" alt="科技4">
+            </div>
+            <button class="slide-prev">&lt;</button>
+            <button class="slide-next">&gt;</button>
+        </section>
+
+        <section class="content">
+            <h1>科技中国</h1>
+            <p>科技中国展示了中国在科技领域的巨大进步和成就。</p>
+        </section>
+
+        <section class="modal-gallery">
+            <h2>更多图片</h2>
+            <div class="gallery">
+                <img class="lazy" data-src="images/tech5.jpg" alt="新能源">
+                <img class="lazy" data-src="images/tech6.jpg" alt="智能化">
+                <img class="lazy" data-src="images/tech7.jpg" alt="科技馆">
+                <img class="lazy" data-src="images/tech8.jpg" alt="外太空">
+            </div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    <footer>
+        <p>大美中国</p>
+    </footer>
+    <script src="js/tech_china.js"></script>
+</body>
+</html>

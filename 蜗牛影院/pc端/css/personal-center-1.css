@@ -1,0 +1,52 @@
+.header .header-bottom .header-b-content .c-c > li:first-child {
+  background-color: #fff;
+  color: #000;
+}
+
+.header .header-bottom .header-b-content .c-c > li:nth-child(5) {
+  background-color: #f99135;
+  color: #ffffff;
+}
+
+.box {
+  width: 1195px;
+  height: 2200px;
+  border: 1px solid #ebeaeb;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .box-left {
+  width: 200px;
+  background-color: #f4f3f4;
+  text-align: center;
+}
+
+.box .box-left h3 {
+  font-size: 22px;
+  color: #333;
+  height: 100px;
+  line-height: 100px;
+}
+
+.box .box-left ul {
+  font-size: 18px;
+}
+
+.box .box-left ul li a {
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  color: #333;
+}
+
+.box .box-left ul li a:hover {
+  background-color: #f99135;
+  color: #fff;
+}
+
+.box .box-right {
+  width: 995px;
+  padding: 0 40px;
+}

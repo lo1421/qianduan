@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../utils/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <!-- 1.jquery -->
+    <script src="../utils/jquery-3.5.1.min/jquery-3.5.1.min.js"></script>
+    <!-- 2.bootstrap.js -->
+    <script src="../utils/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/register.min.css">
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demo">
+        注册
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="demo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登录</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入手机号">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="请输入密码">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="请确认密码">
+                        </div>
+                        <div class="form-group">
+                            <button class="register">立即注册</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                   <a href=""> 立即登录</a>
+                </div>
+                <div class="off" data-dismiss="modal" aria-label="Close"><img src="../images/register-login.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 统一字体和背景颜色 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #edf6ff;
+    color: #333;
+}
+
+/* 导航栏样式 */
+header {
+    background-color: #0b4681;
+    color: white;
+    padding: 29px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主页内容样式 */
+.hero {
+    background-image: url('images/china_main.jpg');
+    background-size: cover;
+    color: rgb(165, 204, 236);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* 图片画廊样式 */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: 460px;
+   
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #0c5095;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

@@ -1,0 +1,272 @@
+.box {
+    width: 1195px;
+    height: 1020px;
+    margin: 0 auto;
+
+    .box-top {
+        width: 915px;
+        // height: 142px;
+        margin: 0 auto;
+
+        ul {
+            width: 950px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 61px auto;
+
+            li {
+                display: inline-block;
+                color: #fff;
+                font-size: 12px;
+                line-height: 20px;
+
+                &:first-child,
+                &:nth-child(3),
+                &:nth-child(5),
+                &:nth-child(7) {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #f99135;
+                    margin-top: -7px;
+                    text-align: center;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(6) {
+                    width: 270px;
+                    height: 5px;
+                    background-color: #f99135;
+                }
+
+                &:last-child {
+                    width: 100%;
+                    display: flex;
+                    margin-left: -28px;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: #f99135;
+
+                    span {
+
+                        &:nth-child(3),
+                        &:last-child {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .box-body {
+        width: 100%;
+        height: 795px;
+        border: 1px solid #ededed;
+        display: flex;
+        justify-content: space-between;
+
+        .seat {
+            width: 735px;
+            padding: 0 25px;
+            // background-color: #fff;
+            color: #666;
+
+            .seat-top {
+                width: 410px;
+                height: 90px;
+                margin: 0 auto;
+                line-height: 90px;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    vertical-align: middle;
+                }
+
+            }
+
+            .seat-center {
+                width: 545px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .seat-box {
+                height: 490px;
+                width: 735px;
+                margin-top: 20px;
+                border: 1px solid #eee;
+                padding: 30px 50px;
+                box-sizing: border-box;
+
+                // background-color: green;
+                >div {
+                    width: 30px;
+                    height: 25px;
+                    float: left;
+                    margin: 4px 6px;
+                    background: url(../images/购票-可选座位.jpg);
+                }
+
+                >span {
+                    width: 30px;
+                    height: 25px;
+                    float: left;
+                    margin: 4px 6px;
+                }
+            }
+        }
+
+        .movie {
+            width: 380px;
+            background-color: antiquewhite;
+            padding: 20px;
+            box-sizing: border-box;
+
+            .movie-top {
+                height: 345px;
+                border-bottom: 1px dotted #999;
+
+                ul {
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+
+                    li {
+                        width: 230px;
+                        font-size: 14px;
+                        .movie-content{
+                            margin-left: 10px;
+                        }
+                        h3{
+                            width: 220px;
+                            height: 100px;
+                            overflow: hidden;
+                        }
+                        span {
+                            color: #999;
+                        }
+
+                        &:first-child {
+                            display: flex;
+                            font-size: 12px;
+                            // flex-wrap: wrap;
+
+                            justify-content: space-between;
+
+                            .photo {
+                                margin-right: 10px;
+                                box-shadow: 2px 2px 10px #999;
+
+                                img {
+                                    width: 120px;
+                                    height: 165px;
+                                    display: block;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin-bottom: 20px;
+                            }
+
+                            span {
+                                color: #666;
+                            }
+
+                        }
+
+                        &:nth-child(5) {
+                            color: #f99135;
+                        }
+                    }
+                }
+            }
+
+            .movie-footer {
+                font-size: 14px;
+
+                .one {
+                    color: #999;
+                    margin: 20px 0;
+                }
+
+                .two {
+                    margin: 15px 0 45px 85px;
+
+                    span {
+                        color: #f99135;
+                    }
+                }
+
+                .price {
+                    margin-bottom: 40px;
+
+                    em {
+                        color: red;
+                    }
+
+                    span {
+                        color: red;
+                        font-size: 24px;
+                    }
+                }
+
+                input {
+                    width: 260px;
+                    height: 42px;
+                    border-radius: 20px;
+                    border: 1px solid #999;
+                    box-sizing: border-box;
+                    padding-left: 25px;
+                    margin-left: 40px;
+
+                    &::placeholder {
+                        color: #333;
+                    }
+                }
+
+                .num {
+                    height: 42px;
+                    display: flex;
+                    margin-top: 10px;
+
+                    input {
+                        width: 165px;
+                        border-radius: 20px 0 0 20px;
+                        border-right: 1px solid transparent;
+                        vertical-align: middle;
+                    }
+
+                    div {
+                        width: 95px;
+                        height: 100%;
+                        border: 1px solid #999;
+                        background-color: #fff;
+                        border-radius: 0 20px 20px 0;
+                        border-left: 1px solid transparent;
+                        vertical-align: middle;
+                        box-sizing: border-box;
+                        color: #999;
+                        line-height: 42px;
+                    }
+                }
+
+                button {
+                    width: 260px;
+                    height: 42px;
+                    border-radius: 20px;
+                    border: 1px solid transparent;
+                    background-color: #dedede;
+                    margin-top: 20px;
+                    color: #fff;
+                    margin: 40px 0 0 45px;
+                }
+            }
+        }
+    }
+}

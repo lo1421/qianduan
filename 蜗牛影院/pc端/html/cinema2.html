@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+       #allmap {width: 200px;height: 200px;overflow: hidden;}
+    </style>
+    <script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=xTsc0FyN0jjHIQdkj4FBtoMThac7ocPQ"></script>
+    <title>影城</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/frame.min.css">
+    <link rel="stylesheet" href="../css/cinema2.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-t-content">
+                <p>下载APP</p>
+                <ul>
+                    <li>登录</li>
+                    <li>|</li>
+                    <li>注册</li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-b-content">
+                <div class="c-l">
+                    <img src="../images/主页_01.png" alt="">
+                    <p>全国</p>
+                    <img src="../images/主页_03.png" alt="">
+                </div>
+                <ul class="c-c">
+                    <li>首页</li>
+                    <li>影片</li>
+                    <li>影城</li>
+                    <li>影城资讯</li>
+                    <li>会员中心</li>
+                </ul>
+                <div class="c-r">
+                    <div class="c-r-content">
+                        <input type="text" placeholder="佩琪  白蛇2  我是猫">
+                        <button><img src="../images/主页_02.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="mainTop">
+            <div class="mainTopContent">
+                <div class="topLeft">
+                    <p id="cinemaName">太平洋影城（时代豪廷店）</p>
+                    <p id="cinemaAddress">郫都区望丛中路1092号时代豪廷广场3楼、4楼</p>
+                    <p id="cinemaTelephone">电话：028-64148844</p>
+                    <p>影院服务<span></span></p>
+                    <p><button>改签</button><span>未取票用户放映前3小时可改签</span></p>
+                    <p><button>3D眼镜</button><span>免押金</span></p>
+                    <p><button>儿童优惠</button><span>一名成人仅可携带一名不足1.3米儿童无座免费观影（巨幕厅、情侣厅除外），...</span></p>
+                    <p><button>WiFi</button><span>影院有免费WiFi</span></p>
+                    <p><button>可停车</button><span>商场内可停车。（检票口可领取2小时免费停车券）</span></p>
+                </div>
+                <div class="topRight" id="allmap">
+                </div>
+                <div class="topImg">
+                    <img id="cinemaImg" src="../images/影院2_03.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="mcTop">蜗牛电影 > 影院 > 太平洋影城（时代豪廷店）</div>
+            <div class="mcCard1">
+                <div id="moviesImgBox" class="mccnr">
+                    <!-- <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div>
+                    <div class="mcMinCard">
+                        <img src="../images/主页_11.jpg" alt="">
+                    </div> -->
+                </div>
+                <div class="mcZ">
+                    <img src="../images/影院2_03.png" alt="">
+                </div>
+                <div class="mcY">
+                    <img src="../images/影院2_05.png" alt="">
+                </div>
+                <div class="mcX">
+                    <img src="../images/影院2_07.png" alt="">
+                </div>
+            </div>
+            <div class="mcCard2">
+               <p>盛夏未来<span>9.5<i>分</i></span></p>
+               <p><i>时长：<em>115分钟</em></i><i>类型：<em>剧情</em></i><i>主演 :<em>张子枫 吴磊 郝蕾</em></i></p>
+            </div>
+            <div class="mcNav">
+                <p>观影时间 :<i id="toDay">今天 8月11</i><span id="toDay2">周六 8月14</span></p>
+            </div>
+            <table class="screeningInformation">
+                <thead>
+                    <tr>
+                        <th>放映时间</th>
+                        <th>语言版本</th>
+                        <th>放映厅</th>
+                        <th>售价（元）</th>
+                        <th>选座购票</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketingOptions">
+                    <!-- <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>14:45</p>
+                            <span>16:40散场</span>
+                        </td>
+                        <td>国语2D</td>
+                        <td>2厅</td>
+                        <td><i>￥</i>26.9</td>
+                        <td><button>停止售票</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul>
+                <li>新手上路</li>
+                <li></li>
+                <li><a href="">注册登录问题</a></li>
+                <li><a href="">用户绑定会员卡问题</a></li>
+                <li><a href="">影票相关问题</a></li>
+                <li><a href="">票价和支付问题</a></li>
+                <li><a href="">取票凭证吗和取票问题</a></li>
+            </ul>
+            <ul>
+                <li>购票指南</li>
+                <li></li>
+                <li><a href="">用户购票流程</a></li>
+                <li><a href="">取票观影指南</a></li>
+                <li><a href="">会员卡支付相关说明</a></li>
+                <li><a href="">网银支付相关说明</a></li>
+            </ul>
+            <ul>
+                <li>会员权益</li>
+                <li></li>
+                <li><a href="">会员订票权益</a></li>
+                <li><a href="">会员积分权益</a></li>
+                <li><a href="">入会资格</a></li>
+                <li><a href="">会员卡折扣说明</a></li>
+            </ul>
+            <ul>
+                <li>联系我们</li>
+                <li></li>
+                <li><a href="">手机客户端介绍与下载</a></li>
+                <li><a href="">影片信息查询</a></li>
+                <li><a href="">手机自助购票</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="copyright-content">
+                <ul>
+                    <li><a href="">公司介绍</a></li>
+                    <li>-</li>
+                    <li><a href="">合作咨询</a></li>
+                    <li>-</li>
+                    <li><a href="">友情链接</a></li>
+                    <li>-</li>
+                    <li><a href="">网站地图</a></li>
+                    <li>-</li>
+                    <li><a href="">站长统计</a></li>
+                    <li>-</li>
+                    <li><a href="">网站声明</a></li>
+                </ul>
+                <p>Copyright © 2021 ed by woniuxy</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var map = new BMapGL.Map("allmap");    // 创建Map实例
+        map.centerAndZoom(new BMapGL.Point(116.404, 39.915), 15);  // 初始化地图,设置中心点坐标和地图级别
+        map.enableScrollWheelZoom(true); 
+        var scaleCtrl = new BMapGL.ScaleControl();  // 添加比例尺控件
+        map.addControl(scaleCtrl);
+        var zoomCtrl = new BMapGL.ZoomControl();  // 添加缩放控件
+        map.addControl(zoomCtrl);
+        var geolocation = new BMapGL.Geolocation();
+        geolocation.getCurrentPosition(function(r){
+            // console.log(r)
+            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                var mk = new BMapGL.Marker(r.point);
+                map.addOverlay(mk); //添加标记到地图上
+                map.panTo(r.point); //将浏览器视口中心点放在 定位的地方
+                //创建地址解析器实例
+                var myGeo = new BMapGL.Geocoder();
+                // 将地址解析结果显示在地图上，并调整地图视野
+                myGeo.getPoint(r.point, function(point){
+                    if(point){
+                        map.centerAndZoom(point, 16);
+                        map.addOverlay(new BMapGL.Marker(point, {title: r.point}))
+                    }else{
+                        alert('您选择的地址没有解析到结果！');
+                    }
+                }, '成都市')
+            }
+            else {
+                // alert('failed' + this.getStatus());
+            }        
+        });
+    </script>
+    <script src="../utils/jquery-3.5.1.min/jquery-3.5.1.min.js"></script>
+    <script src="../js/cinema2.js"></script>
+</body>
+</html>

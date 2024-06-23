@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选座</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/frame.min.css">
+    <link rel="stylesheet" href="../css/unselected.min.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-t-content">
+                <p>下载APP</p>
+                <ul>
+                    <li>登录</li>
+                    <li>|</li>
+                    <li>注册</li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-b-content">
+                <div class="c-l">
+                    <img src="../images/主页_01.png" alt="">
+                    <p>全国</p>
+                    <img src="../images/主页_03.png" alt="">
+                </div>
+                <ul class="c-c">
+                    <li>首页</li>
+                    <li>影片</li>
+                    <li>影城</li>
+                    <li>影城资讯</li>
+                    <li>会员中心</li>
+                </ul>
+                <div class="c-r">
+                    <div class="c-r-content">
+                        <input type="text" placeholder="佩琪  白蛇2  我是猫">
+                        <button><img src="../images/主页_02.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <div class="box">
+        <div class="box-top">
+            <ul>
+                <li>1</li>
+                <li></li>
+                <li>2</li>
+                <li></li>
+                <li>3</li>
+                <li></li>
+                <li>4</li>
+                <li>
+                    <span>选择影片场次</span>
+                    <span>选择座位</span>
+                    <span>14分钟内付款</span>
+                    <span>影院取票观影</span>
+                </li>
+            </ul>
+
+        </div>
+        <div class="box-body">
+            <!-- 选座 -->
+            <div class="seat">
+                <div class="seat-top">
+                    <span>
+                        <img src="../images/购票-可选座位.jpg" alt="">
+                        可选座位
+                    </span>
+                    <span>
+                        <img src="../images/购票-已售座位.jpg" alt="">
+                        已售座位
+                    </span>
+                    <span>
+                        <img src="../images/购票-已选座位.jpg" alt="">
+                        已选座位
+                    </span>
+                </div>
+                <div class="seat-center">
+                    <img src="../images/购票-银幕中央.png" alt="">
+                    <p>银幕中央</p>
+                </div>
+                <div class="seat-box">
+
+                </div>
+            </div>
+            <!-- 电影名 -->
+            <div class="movie">
+                <div class="movie-top">
+                    <ul>
+                        <li id="movie-box">
+                            <div class="photo"><img src="../images/个人中心-我的订单-02.jpg" alt=""></div>
+                            <div class="movie-content">
+                                <h3>盛夏未来</h3>
+                                <p><span>类型:</span>剧情,青春</p>
+                                <p><span>时长:</span>115分钟</p>
+                            </div>
+                        </li>
+                        <li><span>影院：</span>太平洋影城（北欧知识城店）</li>
+                        <li><span>影厅：</span>2号厅</li>
+                        <li><span>版本 :</span> 国语2D</li>
+                        <li><span>场次 :</span> 今天 9月4 8:45</li>
+                        <li><span>票价 : </span>￥26/张</li>
+                    </ul>
+                </div>
+                <div class="movie-footer">
+                    <p class="one">座位：一次最多选5个座位</p>
+                    <div id="seatingp-plan"></div>
+                    <p class="two">请<span>点击左侧</span>座位图选择座位</p>
+                    <p class="price">总价 : <em>￥</em><span id="movieprice">0</span></p>
+                    <input id="inputPhone" type="text" placeholder="输入手机号" class="tel" value="">
+                    <div class="num">
+                        <input id="inputCode" type="text" placeholder="填写验证码">
+                        <div>获取验证码</div>
+                    </div>
+
+                    <button id="confirmSeat">确认选座</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul>
+                <li>新手上路</li>
+                <li></li>
+                <li><a href="">注册登录问题</a></li>
+                <li><a href="">用户绑定会员卡问题</a></li>
+                <li><a href="">影票相关问题</a></li>
+                <li><a href="">票价和支付问题</a></li>
+                <li><a href="">取票凭证吗和取票问题</a></li>
+            </ul>
+            <ul>
+                <li>购票指南</li>
+                <li></li>
+                <li><a href="">用户购票流程</a></li>
+                <li><a href="">取票观影指南</a></li>
+                <li><a href="">会员卡支付相关说明</a></li>
+                <li><a href="">网银支付相关说明</a></li>
+            </ul>
+            <ul>
+                <li>会员权益</li>
+                <li></li>
+                <li><a href="">会员订票权益</a></li>
+                <li><a href="">会员积分权益</a></li>
+                <li><a href="">入会资格</a></li>
+                <li><a href="">会员卡折扣说明</a></li>
+            </ul>
+            <ul>
+                <li>联系我们</li>
+                <li></li>
+                <li><a href="">手机客户端介绍与下载</a></li>
+                <li><a href="">影片信息查询</a></li>
+                <li><a href="">手机自助购票</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="copyright-content">
+                <ul>
+                    <li><a href="">公司介绍</a></li>
+                    <li>-</li>
+                    <li><a href="">合作咨询</a></li>
+                    <li>-</li>
+                    <li><a href="">友情链接</a></li>
+                    <li>-</li>
+                    <li><a href="">网站地图</a></li>
+                    <li>-</li>
+                    <li><a href="">站长统计</a></li>
+                    <li>-</li>
+                    <li><a href="">网站声明</a></li>
+                </ul>
+                <p>Copyright © 2021 ed by woniuxy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 登录 -->
+    <script src="../utils/jquery-3.5.1.min/jquery-3.5.1.min.js"></script>
+    <script src="../js/01.unselected.js"></script>
+</body>
+
+</html>
