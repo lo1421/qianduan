@@ -1,0 +1,139 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* Section header styles */
+.section-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-header h1 {
+    font-size: 3rem;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Content section styles */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.subsection {
+    margin-bottom: 30px;
+}
+
+.subsection h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subsection p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.visuals {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.interactive {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Previous CSS styles remain unchanged */
+
+/* Visuals section styles */
+.visuals .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.visuals .image-gallery img {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Interactive section styles */
+.interactive #timeline {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.interactive #timeline h4 {
+    margin-bottom: 10px;
+}
+
+.interactive #timeline ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.interactive #timeline ul li {
+    margin-bottom: 10px;
+}
+
+.interactive #timeline ul li .event {
+    font-weight: bold;
+}
+
+.interactive #timeline ul li .date {
+    color: #666;
+}
+
