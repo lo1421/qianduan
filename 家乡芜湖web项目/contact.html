@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="history.html">历史与文化</a></li>
+                <li><a href="nature.html">自然风光</a></li>
+                <li><a href="food.html">美食与特产</a></li>
+                <li><a href="travel.html">旅游指南</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="main-section">
+        <div class="section-header">
+            <h1>联系我们</h1>
+            <h2>我们期待与您交流</h2>
+        </div>
+
+        <div class="content">
+            <div class="subsection">
+                <h3>联系信息</h3>
+                <p>请通过以下方式与我们联系：</p>
+                <ul class="contact-info">
+                    <li><strong>邮箱：</strong>info@example.com</li>
+                    <li><strong>电话：</strong>+1234567890</li>
+                    <li><strong>地址：</strong>芜湖市中心某某街道123号</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>留言板</h3>
+                <textarea id="userMessage" placeholder="请输入您的留言或问题..."></textarea>
+                <button id="submitMessage">提交留言</button>
+            </div>
+
+            <div class="subsection">
+                <h3>社交媒体</h3>
+                <p>关注我们的社交媒体页面：</p>
+                <ul class="social-media">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="interactive">
+                <h3>互动元素</h3>
+                <div class="chat-box">
+                    <h4>实时聊天窗口</h4>
+                    <p>在这里您可以与我们实时交流。</p>
+                    <!-- 实时聊天窗口代码 -->
+                    <div id="chatContainer">
+                        <div class="chatLog">
+                            <div class="chat self">
+                                <p>欢迎来到芜湖旅游官网！有什么可以帮助您的吗？</p>
+                            </div>
+                        </div>
+                        <input type="text" id="chatInput" placeholder="输入您的消息...">
+                        <button id="sendBtn">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* Section header styles */
+.section-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-header h1 {
+    font-size: 3rem;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Content section styles */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.subsection {
+    margin-bottom: 30px;
+}
+
+.subsection h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subsection p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.restaurant-list {
+    list-style: none;
+    padding: 0;
+}
+
+.restaurant-list li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.restaurant-list li h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.restaurant-list li p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.restaurant-list li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.restaurant-list li a:hover {
+    text-decoration: underline;
+}
+
+.visuals {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.food-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.food-gallery img {
+    width: 30%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.food-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.interactive {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.interactive-section {
+    margin-bottom: 30px;
+}
+
+#recipeModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#userComment {
+    width: 100
+    %;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#submitComment {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitComment:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .food-gallery {
+        flex-direction: column;
+    }
+
+    .food-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

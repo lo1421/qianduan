@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芜湖的味觉盛宴</title>
+    <link rel="stylesheet" href="css/food.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="history.html">历史与文化</a></li>
+                <li><a href="nature.html">自然风光</a></li>
+                <li><a href="food.html">美食与特产</a></li>
+                <li><a href="travel.html">旅游指南</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="food" class="main-section">
+        <div class="section-header">
+            <h1>芜湖的味觉盛宴</h1>
+            <h2>探索芜湖的美食与特产</h2>
+        </div>
+
+        <div class="content">
+            <div class="subsection">
+                <h3>地方美食</h3>
+                <p>介绍芜湖的特色小吃和传统菜肴，如芜湖烧饼、小龙虾等。</p>
+                <img src="images/food1.jpg" alt="地方美食图片">
+            </div>
+
+            <div class="subsection">
+                <h3>特产介绍</h3>
+                <p>介绍芜湖的特产，如陶瓷、竹编工艺品等。</p>
+                <img src="images/specialty.jpg" alt="特产介绍图片">
+            </div>
+
+            <div class="subsection">
+                <h3>餐饮推荐</h3>
+                <p>推荐几家本地知名餐厅，附菜单和点评。</p>
+                <ul class="restaurant-list">
+                    <li>
+                        <h4>餐厅名称1</h4>
+                        <p>餐厅描述信息...</p>
+                        <a href="#">查看菜单</a>
+                    </li>
+                    <li>
+                        <h4>餐厅名称2</h4>
+                        <p>餐厅描述信息...</p>
+                        <a href="#">查看菜单</a>
+                    </li>
+                    <li>
+                        <h4>餐厅名称3</h4>
+                        <p>餐厅描述信息...</p>
+                        <a href="#">查看菜单</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="visuals">
+                <h3>芜湖美食摄影</h3>
+                <div class="food-gallery">
+                    <img src="images/food2.jpg" alt="美食图片1">
+                    <img src="images/food3.jpg" alt="美食图片2">
+                    <img src="images/food4.jpg" alt="美食图片3">
+                </div>
+            </div>
+
+            <div class="interactive">
+                <h3>互动元素</h3>
+                <div class="interactive-section">
+                    <h4>食谱分享</h4>
+                    <p>这里可以分享美食的食谱。</p>
+                    <button id="recipeBtn">查看食谱</button>
+                    <div id="recipeModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>芜湖烧饼食谱</h2>
+                            <p>食材：面粉、酵母、盐、猪油、芝麻等。</p>
+                            <p>步骤：...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="interactive-section">
+                    <h4>用户评论区</h4>
+                    <p>这里可以让用户分享他们的评论和体验。</p>
+                    <textarea id="userComment" placeholder="分享您的评论..."></textarea>
+                    <button id="submitComment">提交评论</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/food.js"></script>
+</body>
+</html>
